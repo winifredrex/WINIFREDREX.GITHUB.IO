@@ -71,7 +71,7 @@ body {
     }
 
     div#box {
-        width: 95%;
+        width: 15%;
         height: auto; /* Allows box to adjust height based on content */
         margin-top: 50px;
     }
