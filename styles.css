@@ -1,23 +1,24 @@
+/* Default styles for all screen sizes */
 h1 {
     font-family: 'Charmonman', cursive;
-    font-size: 100px;
+    font-size: 60px; /* Adjusted to a more responsive default */
     color: #F71735;
     text-align: center;
-    margin-bottom: 0;
-    margin-top: 50px;
+    margin: 50px 0 0 0;
     padding-top: 55px;
 }
 
 p, ul, li {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px; /* Reduced font size for better readability */
     color: #000000;
     text-align: left;
 }
 
 #intro-text {
     margin: 0 auto;
-    width: 500px;
+    width: 90%; /* Use percentage for flexible layout */
+    max-width: 500px; /* Restrict maximum width */
 }
 
 .text-green {
@@ -34,18 +35,22 @@ div#box {
     background-color: #ffffff;
     border-radius: 15px;
     margin: 0 auto;
-    width: 700px;
-    height: 800px;
-    margin-top: 96px;
+    width: 90%; /* Use percentage for flexibility */
+    max-width: 700px; /* Max width to prevent overflow on large screens */
+    padding: 20px; /* Added padding */
+    margin-top: 50px; /* Reduced margin for responsiveness */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add some shadow for style */
 }
-
 
 body {
     background-color: #F5EFED;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Responsive for larger screens */
-@media only screen and (min-width: 768px) {
+/* Media query for larger screens (768px and above) */
+@media (min-width: 768px) {
     h1 {
         font-size: 80px;
     }
@@ -56,14 +61,14 @@ body {
 
     div#box {
         max-width: 700px;
-        height: 800px;
+        margin-top: 96px;
     }
 }
 
-/* Responsive for small screens */
-@media only screen and (max-width: 767px) {
+/* Media query for smaller screens (below 768px) */
+@media (max-width: 767px) {
     h1 {
-        font-size: 40px;
+        font-size: 40px; /* Reduce size for smaller screens */
     }
 
     p, ul, li {
@@ -71,12 +76,12 @@ body {
     }
 
     div#box {
-        width: 15%;
-        height: auto; /* Allows box to adjust height based on content */
-        margin-top: 50px;
+        width: 95%; /* Expand the box to take more screen space */
+        margin-top: 20px; /* Reduce margin to fit smaller screens */
+        height: auto; /* Let height adjust automatically */
     }
 
     #intro-text {
-        width: 100%;
+        width: 100%; /* Let intro text take full width */
     }
 }
