@@ -43,3 +43,40 @@ div#box {
 body {
     background-color: #F5EFED;
 }
+
+/* Responsive for larger screens */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    p, ul, li {
+        font-size: 18px;
+    }
+
+    div#box {
+        max-width: 700px;
+        height: 800px;
+    }
+}
+
+/* Responsive for small screens */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    p, ul, li {
+        font-size: 14px;
+    }
+
+    div#box {
+        width: 95%;
+        height: auto; /* Allows box to adjust height based on content */
+        margin-top: 50px;
+    }
+
+    #intro-text {
+        width: 100%;
+    }
+}
