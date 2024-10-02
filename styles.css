@@ -76,9 +76,10 @@ body {
     }
 
     div#box {
-        width: 95%; /* Expand the box to take more screen space */
         margin-top: 20px; /* Reduce margin to fit smaller screens */
-        height: auto; /* Let height adjust automatically */
+        width: 260px;
+        height: 600px;
+        margin-bottom: 20px;
     }
 
     #intro-text {
